@@ -1,0 +1,56 @@
+# gebruik de macro in ms excel om de inschrijvingen te verwerken en
+# snelheden te linken aan lopers.
+# het resultaat is de data file/ 
+
+reset;
+model '/home/rudy/Dropbox/OL/Aflossingen/VVOaflossing/VVO aflossing.mod';
+data '/home/rudy/Dropbox/OL/Aflossingen/VVOaflossing/VVO aflossing.dat';
+option solver cplex;
+
+# change display settings
+option omit_zero_rows 1;
+option display_1col 30;
+#option solver_msg 0;
+
+let max_aantal_teams := card(runner) div 3;
+printf '\nEr zijn maximaal %s complete ploegen.\n', max_aantal_teams;
+printf 'Er zijn %s competitieve ploegen.\n\n',comp_team;
+
+let aantalteams := 1;
+
+# eerst maken we de competieve teams
+# aantal comp_teams wordt opgegeven in de data
+for {1..comp_team} {
+		solve;
+		# tonen competitieve ploeg
+		printf '\nTROL%s\n',aantalteams;
+		printf {r in runner, t in team: match[t,r]=1 and t = aantalteams} '%-18s %s\t%s\n',r,points[r],speed[r];
+		printf  {t in team:t = aantalteams} 'totaal%15s\n\n',sum {r in runner: match[t,r]=1} points[r] ;
+		# vastleggen competitieve ploeg
+		fix { r in runner, t in team: match[t,r]=1 and t = aantalteams} match[t,r];
+		let aantalteams := aantalteams+1;
+		}
+
+# nu maken we de resterende teams
+let aantalteams := max_aantal_teams;
+solve;
+
+# toon alle lopers die een ploeg hebben
+print;
+for {t in team:t > comp_team} {
+	printf '\nTROL%s\n',t;
+	printf {r in runner: match[t,r]=1 } '%-18s %s\t%s\n',r,points[r],speed[r];
+	fix { r in runner: match[t,r]=1 } match[t,r]; 
+	printf 'totaal%15s\n',sum {r in runner: match[t,r]=1} points[r] ;
+	}	
+print;
+
+
+# de lopers die overblijven
+for {r in runner} if sum { t in team} match[t,r]= 0 then printf '%s heeft geen ploeg.\n\n',r ;
+
+
+# set back to original display settings
+option omit_zero_rows 0;
+option display_1col 20;
+option solver_msg 1;
