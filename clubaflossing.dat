@@ -1,0 +1,44 @@
+data;
+# dit alleen als je ook de afstand wilt aanwijzen
+param: omloop: afstand := 
+1 5.2 
+2 6.6 
+3 3.2 
+4 5.1 
+5 3.2 
+6 6.7;
+
+# hoeveel competitieve teams wens je 
+param comp_team := 3;
+
+param: runner: speed	points	kort vrouw:=
+ANCIAUXBenjamin	5.78	20	0	0
+FRANSSENDesmond	6	20	0	0
+WILSSENSKoen	6.38	18	0	0
+LAENENWiet	6.67	12	0	0
+GOOSSENSDirk	6.88	14	0	0
+PEETERSToon	8.43	18	0	0
+GENARDirk	8.73	14	0	0
+VERVOORTKarl	8.77	14	0	0
+DEMITSYves	8.83	15	0	0
+NICQUEWilliam	8.92	12	0	0
+JANSSENHerman	9.22	12	0	0
+VERBRAKENLinda	9.23	9	0	1
+SMETKurt	9.45	15	0	0
+WENSFrans	9.53	9	0	0
+BOURGONJONEllen	10.15	13	0	1
+HAATAJAKatri	10.17	10	0	1
+BOLSENSVanessa	10.18	13	0	1
+VANBOSCHJulien	10.55	12	0	0
+DEMITSWolf	10.8	10	1	0
+DEMEYERBetty	11.22	9	1	1
+CEULEMANSMarc	11.78	10	0	0
+DEKERFEddie	12.47	10	0	0
+COLELilyAnne	12.87	7	1	1
+GEENSLieve	12.92	7	1	1
+BOLSENSPaul	14.75	10	1	0
+LEGROSCOLLARDJane	14.85	7	1	1
+BOSCHAlfons	15.87	7	1	0
+ROMBOUTAnnie	17.82	7	1 1	
+;
+
