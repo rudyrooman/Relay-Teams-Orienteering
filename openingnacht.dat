@@ -1,0 +1,35 @@
+data;
+
+# hoeveel competitieve teams wens je 
+param comp_team := 5;
+
+param: omloop: afstand := 
+1 5 
+2 3.5 
+3 5 ;
+
+param: runner: 	speed	H21	parc1 kort :=
+SERRALLONGAMarc	5.87	1	1	0
+ANCIAUXBenjamin	5.85	1	1	0
+FRANSSENWinston	6.33	1	1	0
+PELCKMANSAdriaan	6.65	1	1	0
+LAENENWiet	6.83	0	0	0
+GOOSSENSDirk	6.97	0	0	0
+GENARDirk	8.85	0	0	0
+#DECLERCQRune	8.88	0	0	1
+#DECLERCQBob	9.18	0	0	0
+JANSSENHerman	9.35	0	0	0
+VERMONDENAnnelies	9.48	0	0	0
+INTGROENMike	9.55	0	0	1
+WENSFrans	9.72	0	0	0
+COOLSJan	10.08	0	1	0
+DEMEYERBetty	11.4	0	0	0
+#CEULEMANSMarc	11.87	0	0	0
+ROELINGMonica	12.13	0	0	1
+#DEKERFEddie	12.55	0	0	0
+GEENSLieve	13.13	0	0	1
+#DESCHEPPEREllen	13.22	0	0	1
+#BOLSENSPaul	14.85	0	0	1
+VANBOCKSTALOswald	16.72	0	0	1
+KURTRalph	8.88	0	0	0
+;
