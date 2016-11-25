@@ -19,3 +19,4 @@ Leeftijdscategorieën en punten:
 7 punten: H10, H75+ en D10, D60+ 
 6.3.3.Omlopen en afstanden 
 In volgorde 6km – 4km – 6km 
+
