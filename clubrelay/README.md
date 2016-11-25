@@ -2,8 +2,10 @@
 Team = 6 personen, minimum 2 dames  
 Parcours : 5 Km,7 Km,3 Km,5 Km,3 Km,7 Km  
 Max Ptn = 80  
-20 Ptn : H21 ; 18 Ptn : H20 en H35  
-16 Ptn : H40 ; 15 Ptn : H18, H45 en D21  
+20 Ptn : H21   
+18 Ptn : H20 en H35  
+16 Ptn : H40  
+15 Ptn : H18, H45 en D21  
 14 Ptn : H50 en D20  
 13 Ptn : H16, D18 en D35  
 12 Ptn : H14 en H55  
