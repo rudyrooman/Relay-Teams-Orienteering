@@ -10,5 +10,6 @@ Each branch includes *.dat ( relevant data for your club),
 
 To create the *.dat file I use VBA macro( MS Excell) and Python script.   
 
-To run the scripts, I recommend AMPL IDE or Neos Server
+To run the scripts, I recommend AMPL IDE or Neos Server.
+
 Enjoy!
