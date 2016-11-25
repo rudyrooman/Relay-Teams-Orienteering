@@ -3,7 +3,7 @@ Create optimal orienteering relay teams for your club.
 
 Select specific folders for different relay types.  
 
-Each folders includes  
+Each folders includes:  
 		*.dat (relevant data for your club),  
 		*.mod (model description including all constraints and target function in AMPL language),  
 		*.run (script in AMPL),  
