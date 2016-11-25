@@ -1,9 +1,9 @@
 # Relay-teams-orienteering
 Create the best possible orienteering relay teams for your club 
 
-Select specific branches for different relay types
+Select specific folders for different relay types
 
-Each branch includes *.dat ( relevant data for your club),
+Each folders includes *.dat ( relevant data for your club),
                      *.mod ( model description including all constraints and target function in AMPL language),
                      *.run ( script in AMPL),
                      README.md ( in Dutch) describing rules for this type of Relay competition.
