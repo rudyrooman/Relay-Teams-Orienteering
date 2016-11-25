@@ -9,3 +9,6 @@ Each branch includes *.dat ( relevant data for your club),
                      text file ( in Dutch) describing rules for this type of relay.
 
 To create the *.dat file I use VBA macro( MS Excell) and Python script.   
+
+To run the scripts, I recommend AMPL IDE or Neos Server
+Enjoy!
