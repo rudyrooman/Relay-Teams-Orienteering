@@ -1,6 +1,6 @@
 Speedcalculator op basis van Helga  
 
-stap1: Maak een lijst aan van lopers waarvan je de gemiddelde snelheid wil kennen zoals in lijstsnelheid.txt  
+stap1: Maak een lijst aan van lopers waarvan je de gemiddelde snelheid wil kennen zoals in lijstsnelheid.txt. Het getal is de helganummer van de loper.   
 
 stap2: Run speedcalculator.py  
 
