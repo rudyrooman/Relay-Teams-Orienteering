@@ -6,7 +6,8 @@ Max Ptn = 80
 16 Ptn : H40 ; 15 Ptn : H18, H45 en D21  
 14 Ptn : H50 en D20  
 13 Ptn : H16, D18 en D35  
-12 Ptn : H14 en H55 ; 11 Ptn : D16 en D40  
+12 Ptn : H14 en H55  
+11 Ptn : D16 en D40  
 10 Ptn : H12, H60, D14 en D45  
  9 Ptn : H65, D12 en D50  
  8 Ptn : H70 en D55    
