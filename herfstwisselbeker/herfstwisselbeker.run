@@ -1,0 +1,103 @@
+
+reset;
+model '/home/rudy/Dropbox/OL/Aflossingen/herfstwisselbeker/herfstwisselbeker.mod';
+data '/home/rudy/Dropbox/OL/Aflossingen/herfstwisselbeker/herfstwisselbeker.dat';
+
+# in eerste instantie maken we best mogelijke ploegen.
+drop aantalhogerereeks; 
+let maxaantalupgrades := 10;
+
+# change display settings
+option omit_zero_rows 1;
+option display_1col 40;
+option solver cplex;
+
+option solver_msg 0;
+option cplex_options 'integrality = 4e-07';
+
+# analyse van de beschikbare lopers 
+printf "\nEr zijn %s lopers beschikbaar.\n",card(runner);
+printf "In het beste geval kunner er %s teams gevormd worden.\n\n",card(runner) div 6;
+printf "Per reeks zijn volgende aantallen beschikbaar.\n";
+for { p in parcours} printf "%s %s\n", p,lopers_reeks[p];
+print;
+let max_aantal_teams := min{ p in parcours} lopers_reeks[p];
+if max_aantal_teams = 0 then print "Er kunnen geen teams gevormd worden.";
+
+
+
+for {1..comp_team} {
+		solve;
+		if solve_result <> "infeasible" then {
+			# tonen competitieve ploeg
+			printf '\nTROL%s\n',aantalteams;
+			printf { p in parcours,r in runner:(r,p) in link and match[aantalteams,r,p]=1} "%s %s\n",p,r;
+			print;
+			# vastleggen competitieve ploeg
+			printf  { r in runner: hogerereeks[r] >= 1} "\n%s loopt in een hogere reeks.\n\n", r;
+			fix { r in runner, p in parcours: (r,p) in link and match[aantalteams,r,p]=1} match[aantalteams,r,p];
+		
+			let aantalteams := aantalteams+1;
+		} else {
+		print "Niet mogelijk om zoveel competitieve ploegen te maken!";
+		}
+		}
+
+
+		
+# nu willen we resterende lopers per reeks zien
+print "Dit zijn de overblijvende lopers nadat de competitieve ploegen zijn gemaakt";
+print "";
+display { p in parcours, r in runner : selected[r]=0 and (r,p) in link} schots_score[r,p];
+display lopers_reeks;
+
+# nu maken we de resterende teams
+drop score_teams; 
+restore aantalhogerereeks; # doelstelling is om zoveel mogelijk ploegen te maken met zo weinig mogelijk upgrades omloop/
+let max_aantal_teams := min(min{ p in parcours} lopers_reeks[p],theoretisch_aantal_teams);
+let aantalteams := max_aantal_teams + comp_team;
+display aantalteams;
+solve;
+repeat while solve_result = "infeasible" {
+     let aantalteams := aantalteams -1 ;
+     display aantalteams;
+     solve; }
+let maxaantalupgrades := sum { r in runner} hogerereeks[r];
+# het aantal upgrades ligt nu vast en we zoeken dan zorgen voor de minst zwakke laatste ploeg.
+restore score_teams;
+drop aantalhogerereeks;
+
+solve;    
+
+# toon alle lopers die een ploeg hebben
+
+for {t in team:t > comp_team} {
+	printf '\nTROL%s\n',t;
+	printf { p in parcours,r in runner:(r,p) in link and match[t,r,p]=1} "%s %s\n",p,r;
+	}	
+
+
+# wie loopt in hogere reeks
+printf  { r in runner: hogerereeks[r] >= 1} "\n%s loopt in een hogere reeks.", r;
+print;
+print "Er lopen ",sum {r in runner} hogerereeks[r]," deelnemers in een hogere reeks.";
+
+# overblijvers
+print "";
+print 'De volgende lopers per omloop zijn nog beschikbaar';
+print "";
+display { p in parcours, r in runner : selected[r]=0 and (r,p) in link} schots_score[r,p];	
+option omit_zero_rows 0;	
+# aantal overblijvers
+print "Er blijven", sum {r in runner:selected[r]= 0} 1,"lopers over.";
+print { r in runner : selected[r]=0 } r;	
+print "";
+option omit_zero_rows 1;	
+
+
+printf "Berekening duurde %4.2f seconden.\n\n",_total_solve_time;
+                                                               
+# set options back to original 
+option cplex_options 'integrality = 1e-05';
+option solver_msg 1;
+option display_1col 1;
