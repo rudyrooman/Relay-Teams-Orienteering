@@ -11,6 +11,7 @@ Each folders includes:
 
 To create the *.dat file, I use VBA macro(MS Excel) and Python script.     
 Use param comp_team to select the number of competitive teams. Additional teams are balanced.   
+Speed is in min/km.  
 
 To run the scripts, I recommend AMPL IDE or Neos Server.  
 
