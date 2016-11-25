@@ -1,0 +1,35 @@
+data;
+
+# hoeveel competitieve teams wens je 
+param comp_team := 5;
+
+param: omloop: afstand := 
+1 5 
+2 3.5 
+3 5 ;
+
+param: runner: 	speed	H21	parc1 kort :=
+SEc	5.87	1	1	0
+ANin	5.85	1	1	0
+FRon	6.33	1	1	0
+PEan	6.65	1	1	0
+LAt	6.83	0	0	0
+GOrk	6.97	0	0	0
+GEk	8.85	0	0	0
+DEne	8.88	0	0	1
+DEob	9.18	0	0	0
+Jman	9.35	0	0	0
+Vies	9.48	0	0	0
+Ike	9.55	0	0	1
+Wns	9.72	0	0	0
+Can	10.08	0	1	0
+Dty	11.4	0	0	0
+CErc	11.87	0	0	0
+ROica	12.13	0	0	1
+DEie	12.55	0	0	0
+GEeve	13.13	0	0	1
+DElen	13.22	0	0	1
+BOul	14.85	0	0	1
+VAald	16.72	0	0	1
+KUph	8.88	0	0	0
+;
