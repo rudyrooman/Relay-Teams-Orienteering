@@ -5,10 +5,10 @@ De wedstrijd wordt gelopen met ploegen van drie deelnemers.
 Aan elke leeftijdscategorie wordt een coëfficiënt gegeven door het toekennen van een aantal punten. Elke ploeg mag samengesteld worden uit deelnemers van verschillende leeftijdscategorieën maar het totaal van de ploeg mag niet meer dan 46 punten totaliseren. 
 
 Leeftijdscategorieën en punten:<br />
-	20 punten: H21  <br />	
-	18 punten: H20, H35   <br />   
-	16 punten: H40  <br />	 
-	15 punten: H18, H45 en D21 <br />      
+	20 punten: H21 	
+	18 punten: H20, H35  
+	16 punten: H40   
+	15 punten: H18, H45 en D21      
 	14 punten: H50 en D20 <br />
 	13 punten: H16 en D18, D35 <br />
 	12 punten: H14, H55<br />
