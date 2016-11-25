@@ -8,4 +8,4 @@ Each branch includes *.dat ( relevant data for your club)
                      *.run ( script in AMPL)
                      text file ( in Dutch) describing rules for this type of relay
 
-To create the *.dat file I use VBA macro( MS Excell) and Python script.  
+To create the *.dat file I use VBA macro( MS Excell) and Python script.   
