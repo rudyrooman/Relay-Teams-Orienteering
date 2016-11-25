@@ -9,7 +9,7 @@ Each folders includes:
 		*.run (script in AMPL),  
 		README.md (in Dutch) describing rules for this type of Relay competition.  
 
-To create the *.dat file, I use VBA macro(MS Excel) and Python script.     
+To create the *.dat file, I use VBA macro(MS Excel) and /speedcalculator/speedcalculator.py       
 Use param comp_team to select the number of competitive teams. Additional teams are balanced.   
 Speed is in min/km.  
 
