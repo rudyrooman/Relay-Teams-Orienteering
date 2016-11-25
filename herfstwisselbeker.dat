@@ -4,84 +4,147 @@ data;
 param comp_team := 3;
 
 
-set runner := GLASSEEFrancis DEWULFPeter WILSSENSKoen VANBOSCHJulien ANCIAUXBenjamin	BOLSENSPaul	BOSCHAlfons	BOURGONJONEllen	CEULEMANSMarc	COLELilyAnne COURSIERAlex DECLERCQBob	
-DECLERCQRune DEKERFEddie	DEKERFLia	DEMEYERBetty	DEMITSWolf	DEMITSYves	DESCHEPPEREllen	DESMEDTEddie	
-FRANSSENDesmond	FRANSSENWinston	GEENSLieve	GOOSSENSDirk	INTGROENMike	JANSSENHerman	KURTRalph	LAENENWiet	
-LEGROSCOLLARDJane MERTENSKristel	NICQUEWilliam PEETERSAndre	ROELINGMonica	ROMBOUTAnnie	ROOMANRudy	SERRALLONGAAnna	
-SMETKurt VANBOCKSTALOswald	VANBRUGGENMark VANBRUGGENMit	VANBRUGGENToon VANBRUGGENRik VANBAELENMichael	VERBRAKENLinda	
-VERMONDENAnnelies	VERVOORTKarl	VONCKGeorges	WENSFrans																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+set runner := R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
+R24
+R25
+R26
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+R39
+R40
+R41
+R42
+R43
+R44
+R45
+R46
+R47
+R48
+R49
+R50
+R51
+R52
+R53
+R54
+R55
+R56
+R57
+R58
+R59
+R60
+R61
+R62
+R63
+R64
+R65
+R66
+R67
+R68
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
 ;
-# 3 lopers geen orohydro bij Rik maar wel MichaelVB toegevoegd   45- 3 +1 = 43 lopers !
 
 
 param: link : schots_score :=
-ANCIAUXBenjamin	1	1000
-FRANSSENDesmond	1	943
-VANBAELENMichael 1      900  
-FRANSSENWinston	1	800
-KURTRalph	1	595
-DECLERCQBob	1	525
-GLASSEEFrancis		1   100
-DEWULFPeter		2	150
-WILSSENSKoen	2   850
-VANBOSCHJulien		2	100
-GOOSSENSDirk	2	855
-LAENENWiet	2	860
-ROOMANRudy	2	848
-DEMITSYves	2	684
-VERVOORTKarl	2	675
-KURTRalph	2	670
-DECLERCQBob	2	600
-VANBRUGGENRik   2 	590
-SERRALLONGAAnna	3	1000
-GOOSSENSDirk	3	950
-LAENENWiet	3	925
-ROOMANRudy	3	923
-VERMONDENAnnelies	3	811
-NICQUEWilliam	3	785
-DEMITSYves	3	759
-VERVOORTKarl	3	750
-SMETKurt	3	600
-CEULEMANSMarc	3	537
-DEKERFEddie	3	491
-BOURGONJONEllen	3	485
-JANSSENHerman	3	485
-BOLSENSPaul	3	345
-LAENENWiet	4	1000
-MERTENSKristel	4	980
-NICQUEWilliam	4	860
-VERBRAKENLinda	4	825
-DESMEDTEddie	4	657
-CEULEMANSMarc	4	612
-DEMEYERBetty	4	610
-PEETERSAndre	4	595
-DEKERFEddie	4	566
-BOURGONJONEllen	4	560
-JANSSENHerman	4	560
-DESCHEPPEREllen	4	495
-BOLSENSPaul	4	420
-VERBRAKENLinda	5	900
-VANBRUGGENMit	5	800
-VONCKGeorges	5	803
-INTGROENMike	5	765
-DESMEDTEddie	5	732
-DEMEYERBetty	5	685
-PEETERSAndre	5	670
-WENSFrans	5	705
-COLELilyAnne	5	572
-ROELINGMonica	6	926
-INTGROENMike	6	840
-GEENSLieve	6	836
-DECLERCQRune	6	930
-LEGROSCOLLARDJane	6	713
-DEMITSWolf	6	679
-VANBRUGGENToon	6	650
-COLELilyAnne	6	647
-BOSCHAlfons	6	620
-COURSIERAlex  6 640
-VANBRUGGENMark	6	630
-DEKERFLia	6	550
-ROMBOUTAnnie	6	500
-VANBOCKSTALOswald	6	500
+R1	1	1000
+R2	1	943
+R3	1	600
+R4	1	800
+R5	1	595
+R6	1	525
+R7	1	100
+R8	2	150
+R9	2	850
+R10	2	100
+R11	2	855
+R12	2	860
+R13	2	848
+R14	2	684
+R15	2	675
+R16	2	670
+R17	2	600
+R18	2	590
+R19	3	1000
+R20	3	950
+R21	3	925
+R22	3	923
+R23	3	811
+R24	3	785
+R25	3	759
+R26	3	750
+R27	3	600
+R28	3	537
+R29	3	491
+R30	3	485
+R31	3	485
+R32	3	345
+R33	4	1000
+R34	4	980
+R35	4	860
+R36	4	825
+R37	4	657
+R38	4	612
+R39	4	610
+R40	4	595
+R41	4	566
+R42	4	560
+R43	4	560
+R44	4	495
+R45	4	420
+R46	5	900
+R47	5	800
+R48	5	803
+R49	5	765
+R50	5	732
+R51	5	685
+R52	5	670
+R53	5	705
+R54	5	572
+R55	6	926
+R56	6	840
+R57	6	836
+R58	6	930
+R59	6	713
+R60	6	679
+R61	6	650
+R62	6	647
+R63	6	620
+R64	6	610
+R65	6	630
+R66	6	550
+R67	6	500
+R68	6	500
+
 ;
 
