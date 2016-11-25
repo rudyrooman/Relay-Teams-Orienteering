@@ -1,6 +1,6 @@
 
 Team = 6 personen, minimum 2 dames  
-Parours : 5 Km,7 Km,3 Km,5 Km,3 Km,7 Km  
+Parcours : 5 Km,7 Km,3 Km,5 Km,3 Km,7 Km  
 Max Ptn = 80  
 20 Ptn : H21 ; 18 Ptn : H20 en H35  
 16 Ptn : H40 ; 15 Ptn : H18, H45 en D21  
