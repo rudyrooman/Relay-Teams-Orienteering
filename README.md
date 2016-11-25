@@ -1,10 +1,11 @@
 # Relay-teams-orienteering
 Create the best possible orienteering relay teams for your club 
 
-ga naar de verschillende branches en lees de uitnodiging of spelregels. 
+Select specific branches for different relay types
 
-je hebt telkens een *.dat ( beschrijft de specifieke data voor je club)
-                    *.mod ( beschrijft het model voor dit type aflossing)
-                    *.run ( script dat de ploegen samenstelt)
+Each branch includes *.dat ( relevant data for your club)
+                     *.mod ( model description including all constraints and target function in AMPL language)
+                     *.run ( script in AMPL)
+                     text file ( in Dutch) describing rules for this type of relay
 
-Om de *.dat file aan te maken gebruik ik MS Excel vba macros en /of Python scriptje 
+To create the *.dat file I use VBA macro( MS Excell) and Python script.  
